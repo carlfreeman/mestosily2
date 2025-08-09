@@ -26,7 +26,9 @@ export default function TwoColumnsSection({
         
         {/* Текст */}
         <div className={`md:w-1/2 ${imageLeft ? '' : 'md:order-1'}`}>
+        <div className="flex flex-col">
           <h2 className="font-ctetb text-primary text-3xl mb-6">{title}</h2>
+          <div className="justify-center bg-accent w-60 p-[2px] mb-7"></div></div>
           <div className="font-georgia text-text text-lg">
             {children}
           </div>

@@ -53,7 +53,7 @@ export default function SectionWithListAndCarousel() {
           {/* Левый блок: список */}
           <div className="lg:w-1/2">
           <div className="flex flex-col">
-            <h2 className="font-ctetb text-2xl text-center text-primary">Удобства на территории</h2>
+            <h2 className="font-ctetb text-2xl text-center text-primary">У нас комфортно</h2>
             <div className="justify-center bg-accent w-60 ml-20 mr-20 p-[2px] mb-7"></div></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[

@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="relative h-screen overflow-hidden">
       {/* Фоновое изображение */}
-      <div className="absolute inset-0 transition-transform duration-700"
+      <div className="absolute inset-0 transition-transform duration-700 z-1"
         style={{
           // transform: `translateY(${scrollPosition * 0.5}px)`,
           opacity: 1 - Math.min(scrollPosition / 600, 0.8)
@@ -33,10 +33,20 @@ export default function Header() {
           onLoadingComplete={() => setImageLoaded(true)}
         />
       </div>
+
+      <div 
+        className="absolute w-screen h-screen bg-black/35 z-3"
+        style={{ 
+          opacity: imageLoaded 
+            ? 1 - Math.min(scrollPosition / 300, 1) 
+            : 0,
+          transition: 'opacity 1s ease-in-out'
+        }}
+      ></div>
       
       {/* Текст заголовка */}
       <div 
-        className="absolute inset-0 flex items-center justify-center"
+        className="absolute inset-0 flex items-center justify-center z-6"
         style={{ 
           opacity: imageLoaded 
             ? 1 - Math.min(scrollPosition / 300, 1) 
@@ -44,7 +54,7 @@ export default function Header() {
           transition: 'opacity 1s ease-in-out'
         }}
       >
-        <h1 className="text-6xl md:text-8xl text-white font-loreley text-center px-4 transition-all duration-1000 transform">
+        <h1 className="text-8xl md:text-10xl font-bold text-white font-loreley text-center px-4 transition-all duration-1000 transform">
           Место Силы
         </h1>
       </div>

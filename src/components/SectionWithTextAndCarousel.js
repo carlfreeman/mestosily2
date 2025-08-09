@@ -33,27 +33,82 @@ export default function SectionWithListAndCarousel({
     { 
       id: 5, 
       title: "Комната",
-      image: "/images/1party.webp"
+      image: "/images/room3.webp"
     },
     { 
       id: 6, 
+      title: "Комната",
+      image: "/images/room4.webp"
+    },
+    { 
+      id: 7, 
+      title: "Комната",
+      image: "/images/room5.webp"
+    },
+    { 
+      id: 8, 
+      title: "Комната",
+      image: "/images/room6.webp"
+    },
+    { 
+      id: 9, 
+      title: "Комната",
+      image: "/images/room7.webp"
+    },
+    { 
+      id: 10, 
+      title: "Комната",
+      image: "/images/1party.webp"
+    },
+    { 
+      id: 11, 
       title: "Баня",
       image: "/images/banya.webp"
     },
     { 
-      id: 7, 
+      id: 12, 
       title: "Природа",
       image: "/images/nature1.webp"
     },
     { 
-      id: 8, 
+      id: 13, 
       title: "Природа",
       image: "/images/nature2.webp"
     },
     { 
-      id: 9, 
+      id: 14, 
       title: "Природа",
       image: "/images/nature3.webp"
+    },
+    { 
+      id: 15, 
+      title: "Природа",
+      image: "/images/nature4.webp"
+    },
+    { 
+      id: 16, 
+      title: "Природа",
+      image: "/images/nature5.webp"
+    },
+    { 
+      id: 17, 
+      title: "Природа",
+      image: "/images/nature6.webp"
+    },
+    { 
+      id: 18, 
+      title: "Природа",
+      image: "/images/nature7.webp"
+    },
+    { 
+      id: 19, 
+      title: "Природа",
+      image: "/images/nature8.webp"
+    },
+    { 
+      id: 20, 
+      title: "Природа",
+      image: "/images/nature9.webp"
     },
   ];
 
@@ -110,7 +165,9 @@ export default function SectionWithListAndCarousel({
 
           {/* Текст */}
           <div className={`md:w-1/2 ${imageLeft ? '' : 'md:order-1'}`}>
+          <div className="flex flex-col">
             <h2 className="font-ctetb text-primary text-3xl mb-6">{title}</h2>
+            <div className="justify-center bg-accent w-60 p-[2px] mb-7"></div></div>
             <div className="font-georgia text-text text-3x1">
               {children}
             </div>
