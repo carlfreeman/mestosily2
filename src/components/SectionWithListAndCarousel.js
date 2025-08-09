@@ -101,9 +101,9 @@ export default function SectionWithListAndCarousel() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                  <div className="absolute bottom-0 left-0 right-0 bg-dark/60 0 text-white p-4">
                     <h3 className="font-ctetb text-xl">{item.title}</h3>
-                    <p className="font-georgia opacity-75 mb-3">{item.subtitle}</p>
+                    <p className="font-georgia opacity-85 mb-3">{item.subtitle}</p>
                   </div>
                 </div>
               ))}
