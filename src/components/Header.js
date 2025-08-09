@@ -52,7 +52,7 @@ export default function Header() {
       {/* Индикатор загрузки */}
       {isClient && !imageLoaded && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-20">
-          <div className="w-16 h-16 border-4 border-t-blue-500 border-r-blue-500 border-b-transparent border-l-transparent rounded-full animate-spin"></div>
+          <div className="w-16 h-16 border-4 border-t-blue-100 border-r-blue-100 border-b-transparent border-l-transparent rounded-full animate-spin"></div>
         </div>
       )}
     </header>
