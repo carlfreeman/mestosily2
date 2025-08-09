@@ -19,6 +19,7 @@ export default function TwoColumnsSection({
               fill
               className="object-cover"
               quality={90}
+              loading="lazy"
             />
           </div>
         </div>

@@ -98,6 +98,7 @@ export default function SectionWithListAndCarousel() {
                       fill
                       className="object-cover"
                       quality={90}
+                      loading="lazy"
                     />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
