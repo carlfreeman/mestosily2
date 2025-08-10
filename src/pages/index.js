@@ -9,12 +9,55 @@ import Footer from '../components/Footer';
 import FloatingButton from '../components/FloatingButton';
 
 export default function Home() {
+  const pageTitle = "Место Силы в Тарусе";
+  const pageDescription = "Теплый дом на берегу реки Таруса для отдыха с семьей и друзьями. Пет-френдли, баня, мангал, охраняемая территория.";
+  const canonicalUrl = "https://mestosily-tarusa.ru";
   return (
     <div>
       <Head>
-        <title>Место Силы</title>
-        <meta name="Приглашаем вас в наш теплый и просторный дом на берегу реки Таруса. Здесь, на опушке леса, атмосфера покоя и уюта – идеальное место, чтобы отдохнуть от суеты в кругу близких." content="Место Силы" />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={`${canonicalUrl}/images/og-image.webp`} />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={`${canonicalUrl}/images/twitter-image.webp`} />
+
+        // <meta name="yandex-verification" content="ваш_код" />
+        // <meta name="google-site-verification" content="ваш_код" />
+
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Vacation",
+            "name": "Место Силы",
+            "description": "${pageDescription}",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Таруса",
+              "addressRegion": "Калужская область",
+              "postalCode": "249105",
+              "streetAddress": "село Лопатино"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "54.737508",
+              "longitude": "37.031054"
+            }
+          }
+          `}
+        </script>
       </Head>
 
       <Header />
@@ -98,5 +141,6 @@ export default function Home() {
       {/* Плавающая кнопка */}
       <FloatingButton />
     </div>
+    
   );
 }

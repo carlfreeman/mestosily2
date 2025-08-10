@@ -25,7 +25,7 @@ export default function Header() {
         }}>
         <Image
           src="/images/header-bg.webp"
-          alt="Горный пейзаж"
+          alt="Участок"
           fill
           className="object-cover"
           quality={100}

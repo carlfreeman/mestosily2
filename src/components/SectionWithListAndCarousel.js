@@ -47,13 +47,13 @@ export default function SectionWithListAndCarousel() {
   }, []);
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-white" aria-labelledby="comfort-heading">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Левый блок: список */}
           <div className="lg:w-1/2">
           <div className="flex flex-col">
-            <h2 className="font-ctetb text-2xl text-center text-primary">У нас комфортно</h2>
+            <h2 id="comfort-heading" className="font-ctetb text-2xl text-center text-primary">У нас комфортно</h2>
             <div className="justify-center bg-accent w-60 ml-20 mr-20 p-[2px] mb-7"></div></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
@@ -81,12 +81,15 @@ export default function SectionWithListAndCarousel() {
           </div>
           
           {/* Правый блок: карусель */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2" aria-labelledby="attractions-heading">
             <h2 className="font-ctetb text-2xl text-center text-primary mb-8">Интересные места в округе</h2>
             <div className="relative overflow-hidden rounded-xl h-96">
               {carouselItems.map((item, index) => (
                 <div 
                   key={item.id}
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label={`${index + 1} из ${carouselItems.length}`}
                   className={`absolute inset-0 transition-opacity duration-1000 flex items-center justify-center ${
                     index === activeSlide ? 'opacity-100' : 'opacity-0'
                   }`}
