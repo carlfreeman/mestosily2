@@ -51,7 +51,7 @@ export default function SectionWithListAndCarousel() {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Левый блок: список */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-2/3">
           <div className="flex flex-col">
             <h2 id="comfort-heading" className="font-ctetb text-2xl text-center text-primary">У нас комфортно</h2>
             <div className="justify-center bg-accent w-60 ml-20 mr-20 p-[2px] mb-7"></div></div>
@@ -61,7 +61,7 @@ export default function SectionWithListAndCarousel() {
                 "4 уютные спальни", 
                 "Cветлая гостиная с панорамными окнами", 
                 "Полностью оборудованная кухня",
-                "2 санузла, ГВС",
+                "2 санузла, ГВС, теплые полы",
                 "Зеленая зона",
                 "Баня на дровах",
                 "Просторная терраса с красивым видом",

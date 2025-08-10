@@ -33,8 +33,8 @@ export default function Home() {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={`${canonicalUrl}/images/twitter-image.webp`} />
 
-        // <meta name="yandex-verification" content="ваш_код" />
-        // <meta name="google-site-verification" content="ваш_код" />
+        // <meta name="yandex-verification" content="Ваш_код" />
+        // <meta name="google-site-verification" content="Ваш_код" />
 
         <script type="application/ld+json">
           {`
@@ -64,9 +64,9 @@ export default function Home() {
 
       {/* Секция 1: текст по центру */}
       <section className="py-20 px-4 h-screen content-center">
-        <div className="container mx-auto max-w-3x1 md:max-w-4xl">
+        <div className="container mx-auto max-w-3x1 md:max-w-5xl">
           <p className="font-ctetb text-3xl md:text-4xl text-justify text-primary leading-relaxed">
-            Приглашаем вас в наш теплый и просторный дом на берегу реки Таруса. Здесь, на опушке леса, атмосфера покоя и уюта – идеальное место, чтобы отдохнуть от суеты в кругу близких.
+            Приглашаем Вас в наш теплый и просторный дом для круглогодичного проживания на берегу реки Таруса. Здесь, на опушке леса, атмосфера покоя и уюта – идеальное место, чтобы отдохнуть от суеты в кругу близких.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function Home() {
         title="У нас празднуют"
       >
         <p className="font-georgia text-justify text-lg">
-          Приготовьтесь к незабываемым праздникам! Дом идеально подходит для больших встреч с друзьями и семьей. Просторные комнаты, уютный камин и праздничная атмосфера сделают ваш Новый год (или любой другой праздник) по-настоящему особенным!
+          Приготовьтесь к незабываемым праздникам! Дом идеально подходит для больших встреч с друзьями и семьей. Просторные комнаты, уютный камин и праздничная атмосфера сделают Ваш Новый год (или любой другой праздник) по-настоящему особенным!
         </p>
       </SectionWithTextAndCarousel>
 
@@ -89,7 +89,7 @@ export default function Home() {
         imageSrc="/images/pet.webp"
       >
         <p className="font-georgia text-justify text-lg mb-4">
-          Не оставляйте любимцев дома! В нашем доме рады не только вам, но и вашим питомцам. Большая территория подойдет для выгула любых пушистых (и не очень) зверушек. Ваш питомец будет в восторге!
+          Не оставляйте любимцев дома! В нашем доме рады не только Вам, но и Вашим питомцам. Большая территория подойдет для выгула любых пушистых (и не очень) зверушек. Ваш питомец будет в восторге!
         </p>
       </TwoColumnsSection>
 
@@ -128,7 +128,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-3xl">
           <p className="font-ctetb text-2xl md:text-3xl text-justify text-primary leading-relaxed">
-            Это место, где время течёт медленно, а каждый день наполнен простыми радостями. Приезжайте отдыхать в любое время года – здесь всегда вам рады!
+            Это место, где время течёт медленно, а каждый день наполнен простыми радостями. Приезжайте отдыхать в любое время года – здесь всегда Вам рады!
           </p>
         </div>
       </section>
